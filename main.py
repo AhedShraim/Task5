@@ -28,6 +28,8 @@ print(All_info,"\n")
 
 
 
+# Q2: Write a Python program that prompts the user to calculate Area and perimeter for rectangle
+# and raises a exception if the input is not a positive input.
 
 # Defining the area formula by using a function.
 def area(length , width):
