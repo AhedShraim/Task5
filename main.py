@@ -43,9 +43,15 @@ def perimeter(length , width):
 length = float(input("Enter the Length of the rectangle: "))
 width = float(input("Enter the Width of the rectangle: "))
 
-# Raising an exception if the user inputs one of the above as a negative value.
+# Using try and except if the user inputs one of the above as a negative value.
 if length < 0 or width < 0:
-    raise Exception(f"One of the inputs{length , width} is a negative number")
+
+    try:
+        print(f"One of the inputs{length , width} is a negative number \n")
+        print("Please!!, Be sure all the values are POSITIVE ")
+    except:
+        pass
+
 # if the inputs bigger or equal zero then the code will continue working without problem.
 # And we will have the outputs.
 else:
